@@ -33,7 +33,7 @@ from airflow.cli.simple_table import AirflowConsole
 from airflow.cli.utils import is_stdout, print_export_output
 from airflow.configuration import conf
 from airflow.exceptions import AirflowNotFoundException
-from airflow.models import Connection
+from airflow.sdk import Connection
 from airflow.providers_manager import ProvidersManager
 from airflow.secrets.local_filesystem import load_connections_dict
 from airflow.utils import cli as cli_utils, helpers, yaml
